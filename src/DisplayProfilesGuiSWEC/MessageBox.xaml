@@ -1,0 +1,29 @@
+﻿<Window x:Class="DisplaySwitcher.MessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DisplaySwitcher"
+        mc:Ignorable="d"
+        Title="Confirmation" Height="245.395" Width="595.005" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <DockPanel>
+        <Border DockPanel.Dock="Top" BorderBrush="#FFF36969" BorderThickness="0,0,0,0" >
+            <DockPanel Height="50">
+                <DockPanel.Background>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#FF1E79A4" Offset="0.008"/>
+                        <GradientStop Color="#FF60B3D7" Offset="1"/>
+                        <GradientStop Color="#FF2AA3DC" Offset="0.532"/>
+                    </LinearGradientBrush>
+                </DockPanel.Background>
+
+                <TextBlock Margin="10,0" x:Name="Caption" Text="Caution!" FontSize="20" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" />
+
+            </DockPanel>
+        </Border>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,20,10" VerticalAlignment="Bottom">
+            <Button Margin="10,0,0,0" Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" IsDefault="True" IsCancel="True" Click="Button_Click_1"/>
+        </StackPanel>
+        <TextBlock x:Name="Message" TextWrapping="Wrap" Text="Changing the display arrangement may cause brief disruptions and screen flickering while applying the settings." Margin="20" FontSize="16"/>
+    </DockPanel>
+</Window>

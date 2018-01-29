@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayProfilesLogic", "DisplayProfilesLogic\DisplayProfilesLogic.csproj", "{9E31D87E-78FD-4B35-A474-641247C6138B}"
 EndProject
@@ -21,6 +21,8 @@ EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "DisplayProfilesInstaller-x86", "DisplayProfilesInstaller-x86\DisplayProfilesInstaller-x86.wixproj", "{C773F3CC-8FA4-4DC8-9322-32F264119A03}"
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "DisplayProfilesInstaller-x64", "DisplayProfilesInstaller-x64\DisplayProfilesInstaller-x64.wixproj", "{DB86C622-51DA-4874-8AB3-1FB97263F6D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayProfilesGuiSWEC", "DisplayProfilesGuiSWEC\DisplayProfilesGuiSWEC.csproj", "{2B73B1CF-1DFC-467C-9660-7E3B2CD4DB83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,8 +51,15 @@ Global
 		{DB86C622-51DA-4874-8AB3-1FB97263F6D8}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{DB86C622-51DA-4874-8AB3-1FB97263F6D8}.Release|Any CPU.ActiveCfg = Release|x64
 		{DB86C622-51DA-4874-8AB3-1FB97263F6D8}.Release|Any CPU.Build.0 = Release|x64
+		{2B73B1CF-1DFC-467C-9660-7E3B2CD4DB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B73B1CF-1DFC-467C-9660-7E3B2CD4DB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B73B1CF-1DFC-467C-9660-7E3B2CD4DB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B73B1CF-1DFC-467C-9660-7E3B2CD4DB83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {158764FE-1775-4B38-8EC5-F3F62A0FD58F}
 	EndGlobalSection
 EndGlobal
